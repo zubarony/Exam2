@@ -108,12 +108,16 @@ nav .header-menu ul li ul li a{
 }
 nav .header-menu ul li a{
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     display: inline-block;
     padding: 18px 10px;
 }
 .header-button{
     margin-top: 6px;
+
+}
+nav .header-menu ul li a span {
+    font-size: 10px;
 }
 nav .header-menu ul li a span.minus{
     display: none;
@@ -335,9 +339,9 @@ nav .header-menu ul li:hover > a span.minus{
     width: 50%;
 }
 .featur-text{}
-.featur-text h1{
-    font-size: 30px;
-    margin-bottom: 20px;
+.featur-text h1 {
+    font-size: 34px;
+    margin: 12px 0;
 }
 .featur-text h2{
     font-size: 34px;
@@ -577,7 +581,7 @@ section.marketing {
     margin-bottom: 10px;
 }
 
-.pro-img-1:nth-child(4){ width:66% ;}
+.pro-img-1:nth-child(4){width: 66%;}
 .pro-img-1:nth-child(5){width: 32%;}
 .pro-img-1:nth-child(6){width: 49%;}
 .pro-img-1:nth-child(7){width: 49%;}
@@ -681,6 +685,7 @@ section.marketing {
     display: inline-block;
 } 
 .faq-item-img-right img {
+    width: 29rem;
     padding-left: 92px;
 }
 
@@ -691,7 +696,7 @@ section.marketing {
     padding: 100px 0;
 }
 
-.testimonia-title{}
+
 .testimonia-title h5 {
     font-weight: 400;
     font-size: 20px;
@@ -752,11 +757,11 @@ section.marketing {
 .slid-o {
     margin-top: 40px;
 }
-.putki
-{
-color: #f0401c;
+.testimonial-slide-1 {
+    color: #f0401c;
+    padding-right: 8px;
 }
-.kala {
+.testimonial-slide-2 {
     color: #ffff;
 }
  
@@ -773,7 +778,7 @@ section.pricing-section {
     position: relative;
 }
 
-.all-p-table {
+.pricing-items {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
@@ -1103,7 +1108,35 @@ section.pricing-section {
     display: flex;
 }
 .footer-bottom ul li{}
+
+
+
 .footer-bottom ul li a {
     color: #fff;
     padding-left: 25px;
+}
+.click-up a span {
+	background: #d51f08;
+	width: 35px;
+	height: 35px;
+	position: fixed;
+	bottom: 51px;
+	right: 2%;
+	color: #fff;
+	z-index: 1000;
+	text-align: center;
+	line-height: 35px;
+	font-size: 17px;
+    animation: animat 1.5s linear infinite;
+}
+@keyframes animat{
+    0%{
+        bottom: 40px;
+    }
+   50%{
+       bottom: 50px;
+   }
+   100%{
+       bottom: 40px;
+   }
 }
